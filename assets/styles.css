@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+    --White: #ffffff;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#Ping{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+    width: 100px;
+}
+.Ping__Title{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ping__Title p{
+    font-size: 2.2rem;
+    color: var(--Gray);
+}
+
+.Ping__Title p span{
+    color: var(--VeryDarkBlue);
+    font-weight: 700;
+}
+
+.Ping__Title small{
+    font-size: 1.2rem;
+    color: var(--VeryDarkBlue);
+}
+
+.Ping__Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Formfield{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.input{
+    padding-left: 30px;
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid var(--PaleBlue);
+}
+
+.input::placeholder{
+    color: var(--PaleBlue);
+}
+
+.error{
+    color: var(--LightRed);
+    font-size: 1.3rem;
+}
+
+.borderError{
+    border: 1px solid var(--LightRed);
+}
+
+.Btn{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: var(--Blue);
+    color: var(--White);
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+.Btn:hover{
+    background-color: var(--PaleBlue);
+    transition: all 0.4s;
+}
+
+.Ping__Dashboard{
+    padding-top: 60px;
+    width: 300px;
+}
+
+footer{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterIcons{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.FooterIcons i{
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--PaleBlue);
+    color: var(--Blue);
+}
+
+.FooterIcons i:hover{
+    background-color: var(--Blue);
+    color: var(--White);
+    transition: all 0.4s;
+}
+
+footer p{
+    padding: 20px 0;
+    color: var(--Gray);
+}
+
+@media (min-width: 768px) {
+    .Ping__Title p{
+        font-size: 3.4rem;
+    }
+    .Ping__Title small{
+        font-size: 1.5rem;
+    }
+
+    .Ping__Form{
+        padding-top: 40px;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    #inputEmail{
+        width: 370px;
+    }
+
+    .Btn{
+        width: 160px;
+    }
+
+
+    .Ping__Dashboard{
+        height: 420px;
+        width: 600px;
+    }
+}
